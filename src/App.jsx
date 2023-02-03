@@ -7,6 +7,8 @@ import LoginPage from "./pages/LoginPage/LoginPage";
 import FeedPage from "./pages/FeedPage/FeedPage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
 import CryptoPricesPage from './pages/CryptoPricesPage/CryptoPricesPage';
+import FearAndGreedIndex from "./pages/FearAndGreedIndex/FearAndGreedIndex";
+
 // import the userService so we have a function (getUser) that can get the jwt token
 // from localstorage and decode it
 import userService from "./utils/userService";
@@ -33,6 +35,11 @@ export default function App() {
         <Route
         path='/CryptoPricesPage'
         element={<CryptoPricesPage
+          loggedUser={user} handleLogout={handleLogout}/>}
+          />
+          <Route
+        path='/FearAndGreedIndex'
+        element={<FearAndGreedIndex
           loggedUser={user} handleLogout={handleLogout}/>}
           />
         <Route

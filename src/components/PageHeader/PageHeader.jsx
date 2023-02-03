@@ -5,14 +5,19 @@ import "./PageHeader.css";
 function PageHeader({ loggedUser, handleLogout }) {
   return (
     <Segment clearing>
-      <Header as="h2" floated="right"> 
+      <Header as="h3" floated="right"> 
         <Link to="/">
-          <Icon name="compass"></Icon>  </Link>
+          <Icon name="compass" color='black'></Icon>  </Link> 
         <Link to="/CryptoPricesPage">
                <div>Crypto Prices</div>
         </Link> 
+
+        <Link to="/FearAndGreedIndex">
+               <div>Fear And Greed Index</div>
+        </Link> 
+
         <Link to="" onClick={handleLogout}>
-          Logout
+          <div>Logout</div>
         </Link>
       </Header>
       
@@ -26,10 +31,13 @@ function PageHeader({ loggedUser, handleLogout }) {
             }
             avatar
           ></Image>
+          
         </Link>
       </Header>
     </Segment>
   );
 }
+
+
 
 export default PageHeader;

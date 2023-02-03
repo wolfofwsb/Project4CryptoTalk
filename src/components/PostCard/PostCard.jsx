@@ -1,5 +1,6 @@
 import { Card, Icon, Image } from "semantic-ui-react";
 import { Link } from "react-router-dom";
+import "./PostCard.css";
 
 
 function PostCard({ post, isProfile, addLike, removeLike, loggedUser }) {
@@ -29,7 +30,7 @@ function PostCard({ post, isProfile, addLike, removeLike, loggedUser }) {
           <Card.Header>
             <Link to={`/${post.user.username}`}>
               <Image
-                size="large"
+                size="large" 
                 avatar
                 src={
                   post.user.photoUrl
@@ -49,7 +50,7 @@ function PostCard({ post, isProfile, addLike, removeLike, loggedUser }) {
       </Card.Content>
       <Card.Content extra textAlign={"right"}>
         <Icon name={"money bill alternate"} size="large" color={likeColor} onClick={clickHandler}/>
-        {post.likes.length} Likes
+        {post.likes.length} GREENBACKS
       </Card.Content>
     </Card>
   );

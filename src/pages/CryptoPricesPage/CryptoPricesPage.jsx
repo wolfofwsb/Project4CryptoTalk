@@ -5,9 +5,11 @@ import { useState } from "react";
 import "./CryptoPricePage.css";
 
 export default function CryptoPricesPage({handleLogout, loggedUser}) {
-  // import axios
+  //My to-do plan for api setup
+    // import axios
   // get api data from coinstats
   // push the data that you get from the api and push it into an array
+  //fix error with max 100+ top crypto displayed, check with Jim
   const [coinData, setCoinData] = useState([]);
 const [search, setSearch] = useState('')
   useEffect(() => {

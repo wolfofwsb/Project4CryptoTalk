@@ -1,5 +1,5 @@
 import User from "../models/user.js";
-import Post from '../models/post.js';
+import Cryptopost from '../models/Post.js';
 import {s3} from '../config/s3-config.js'
 // import uuid to help generate random names
 import { v4 as uuidv4 } from "uuid";
@@ -29,7 +29,7 @@ function create(req, res) {
 
     try {
       // adding our post information to the database
-      const post = await Post.create({
+      const post = await Cryptopost.create({
         user: req.user._id,
         caption: req.body.caption,
         photoUrl: data.Location // <- this is from aws, it is the URL that our picture exists at in s3 bucket
@@ -51,7 +51,7 @@ async function index(req, res) {
     // this populates the user when you find the posts
     // so you'll have access to the users information
     // when you fetch the posts
-    const posts = await Post.find({}).populate("user").exec(); // populating on the model
+    const posts = await Cryptopost.find({}).populate("user").exec(); // populating on the model
     res.status(200).json({ data: posts });
   } catch (err) {
     res.status(400).json({ err });

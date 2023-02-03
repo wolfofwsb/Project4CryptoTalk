@@ -20,7 +20,7 @@ function ProfileBio({ user }) {
             <h3>{user.username}</h3>
           </Segment>
           <Segment>
-            <span> Bio: {user.bio}</span>
+            <span> About this degenerate gambler: {user.bio}</span>
           </Segment>
         </Grid.Column>
       </Grid.Row>

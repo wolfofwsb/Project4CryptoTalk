@@ -1,5 +1,5 @@
 import User from '../models/user.js'
-import Post from '../models/post.js'
+import Cryptopost from '../models/Post.js'
 import jwt from 'jsonwebtoken'
 const SECRET = process.env.SECRET;
 
@@ -27,7 +27,7 @@ async function profile(req, res){
     // Then find all the posts that belong to that user
     if(!user) return res.status(404).json({error: 'User not found'})
 
-    const posts = await Post.find({user: user._id}).populate("user").exec();
+    const posts = await Cryptopost.find({user: user._id}).populate("user").exec();
     console.log(posts, ' this posts')
     res.status(200).json({data: posts, user: user})
   } catch(err){
