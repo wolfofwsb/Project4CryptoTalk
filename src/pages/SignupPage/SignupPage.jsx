@@ -1,7 +1,7 @@
 import { Button, Form, Grid, Header, Image, Segment } from "semantic-ui-react";
 import { useState } from "react";
 import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
-import './signuppage.css'
+import './SignupPage.css'
 
 import { useNavigate } from "react-router-dom";
 // Since we want to make a request as a user about a user
