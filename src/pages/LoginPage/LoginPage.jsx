@@ -12,7 +12,7 @@ import {
   Message,
   Segment,
 } from "semantic-ui-react";
-import './loginpage.css'
+
 
 export default function LoginPage(props) {
   const [error, setError] = useState("");
