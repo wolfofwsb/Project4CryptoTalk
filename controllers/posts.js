@@ -1,5 +1,5 @@
 import User from "../models/user.js";
-import Cryptopost from '../models/Post.js';
+import Cryptopost from '../models/post.js';
 import {s3} from '../config/s3-config.js'
 // import uuid to help generate random names
 import { v4 as uuidv4 } from "uuid";
