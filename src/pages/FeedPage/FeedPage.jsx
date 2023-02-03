@@ -103,15 +103,15 @@ function FeedPage({loggedUser, handleLogout}) {
         </Grid.Column>
       </Grid.Row>
       <Grid.Row>
-        <Grid.Column style={{ maxWidth: 450 }}>
+        <Grid.Column style={{ maxWidth: 600 }}>
           <AddPuppyForm handleAddPost={handleAddPost} />
         </Grid.Column>
       </Grid.Row>
       <Grid.Row>
-        <Grid.Column style={{ maxWidth: 450 }}>
+        <Grid.Column style={{ maxWidth: 800 }}>
           <PostDisplay
             posts={posts}
-            numPhotosCol={1}
+            numPhotosCol={3}
             isProfile={false}
             loading={loading}
             addLike={addLike}

@@ -5,7 +5,7 @@ import PageHeader from '../../components/PageHeader/PageHeader'
 
 function Layout({loggedUser, handleLogout}) {
 	return ( 
-		<Grid>
+		<Grid columns={3}>
 			<Grid.Row>
 				<Grid.Column>
 					<PageHeader loggedUser={loggedUser}  handleLogout={handleLogout}/>
