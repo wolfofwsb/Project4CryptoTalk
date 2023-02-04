@@ -1,32 +1,35 @@
+Project 4
+With so many cryptocurrencies to choose from, social media influance is playing a larger and larger role everyday in whats the new 'go to coin' to become a millionare. What I have made is a small social media to share the most popular cryptos retail traders are holding bags in. Haha.
 
-# Mern Boilerplate
+The technologies used in the devlopment phase were HTML5, CSS v3. JS, REACT, MongoDB, Express, AWS, Node.JS,and semantic UI.
+Included below are some screenshots to catch a preview of our community before you dive deeper. 
 
-This is a mern Boilerplate using vite to compile the frontend.  
+App screenshots:
 
-##### Things to note
+https://imgur.com/y0RCeoG https://imgur.com/ha8EWpT https://imgur.com/mx19mfL https://imgur.com/JUPxQrD https://imgur.com/AkyTHeb
 
-1. The server code is using `import`, currently you have to add the file extension in the server code. 
+WireFrame & ERD link:
 
-2.  Note the `index.html` for the code needed to be added for hot reloading and etc... 
+https://imgur.com/S2Ovzlj
 
-3. Code is setup to use `JWT` auth
-
-4. Take a look at the server.js code, there is some es6 things to setup `__dirname`
+*** ERD [ insert link here]
 
 
-#### Setup 
+Link to CryptoTalk app:
 
-1. ```npm install```
-2. ```npm run dev```
-3. setup `.env` file 
+https://dead-lime-donkey-sock.cyclic.app/
 
-- .env file 
+Look out for these updates:
 
-```
-SECRET=seiRocks!
-```
+Ability to post videos.
+Futures predictions section.
+Dono ability to donate for top posters.
+An ICO on KuCoin.com involving our native coin 'Kendo Coin' on the ERC20 protcol on the ETH blockchain.
 
-##### Starting the App
 
-- One terminal
-command - ```npm run dev```
+Any comments, questions, or concerns can be forwarded to: ideas@backroadgames.com
+
+
+Thanks for your support!
+
+-AJ
