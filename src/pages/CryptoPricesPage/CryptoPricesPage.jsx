@@ -68,7 +68,7 @@ const [search, setSearch] = useState('')
                     <td>${val.marketCap}</td>
                     <td>${val.price.toFixed(2)}</td>
                     <td>{val.availableSupply}</td>
-                    <td>{val.volume.toFixed(0)}</td>
+                    <td>{val.volume?.toFixed(0)}</td>
                   </tr>+
                 </>
               );
