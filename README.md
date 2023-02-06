@@ -12,7 +12,7 @@ WireFrame & ERD link:
 
 https://imgur.com/S2Ovzlj
 
-*** ERD [ insert link here]
+
 
 
 Link to CryptoTalk app:
